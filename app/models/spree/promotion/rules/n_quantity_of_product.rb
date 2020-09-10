@@ -1,7 +1,7 @@
 module Spree
   class Promotion
     module Rules
-      class NQuantityOfProduct < PromotionRule
+      class NQuantityOfProduct < ::Spree::PromotionRule
         has_many :product_promotion_rules, class_name: 'Spree::ProductPromotionRule',
                                            foreign_key: :promotion_rule_id,
                                            dependent: :destroy
