@@ -3,13 +3,13 @@ fr:
     n_product_rule:
       match_policy: Combien de produits choisis doivent satisfaire à la règle?
       quantity: Quantité (n)
+    create_selected_product_adjustments:
+      quantity: Quantité (La promotion sera applicable seulement pour la quantité spécifié ici.)
+    promotion_action_types:
       create_selected_product_adjustments:
-        quantity: Quantité (La promotion sera applicable seulement pour la quantité spécifié ici.)
-      promotion_action_types:
-        create_selected_product_adjustments:
-          name: Créer un ajustement pour le produit sélectionné
-          description: Promotion applicable sur la variante sélectionnée ci-dessous
-      promotion_rule_types:
-        n_quantity_of_product:
-          description: Commande doit inclure 'n' quantité des produits suivants
-          name: N Quantité Produit
+        name: Créer un ajustement pour le produit sélectionné
+        description: Promotion applicable sur la variante sélectionnée ci-dessous
+    promotion_rule_types:
+      n_quantity_of_product:
+        description: Commande doit inclure 'n' quantité des produits suivants
+        name: N Quantité Produit
