@@ -1,8 +1,11 @@
 fr:
   spree:
+    product_rule: 
+      match_at_least_one: Au moins un de ces produits
+      match_all_products: Tous les produits
     n_product_rule:
-      match_policy: Combien de produits choisis doivent satisfaire à la règle?
-      quantity: Quantité (n)
+      match_policy: Combien de ces produits doivent faire parti de la commande?
+      quantity: Quantité
     create_selected_product_adjustments:
       quantity: Quantité (La promotion sera applicable seulement pour la quantité spécifié ici.)
     promotion_action_types:
@@ -11,5 +14,5 @@ fr:
         description: Promotion applicable sur la variante sélectionnée ci-dessous
     promotion_rule_types:
       n_quantity_of_product:
-        description: Commande doit inclure 'n' quantité des produits suivants
+        description: La commande doit inclure les produits suivants
         name: N Quantité Produit

@@ -9,7 +9,7 @@ module Spree
         preference :quantity, :integer, default: 1
 
         validates_numericality_of :preferred_quantity, greater_than_or_equal_to: 1
-        MATCH_POLICIES = %w(any all)
+        MATCH_POLICIES = %w(at_least_one all_products)
         preference :match_policy, :string, default: MATCH_POLICIES.first
 
         def eligible_products
