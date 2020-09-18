@@ -11,7 +11,7 @@ module Spree
     def compute(object, preferred_max_applicable_quantity)
       return 0 if object.quantity == 0
       max_applicable_quantity = [object.quantity, preferred_max_applicable_quantity].min
-      computed_amount = ((object.amount * max_applicable_quantity/object.quantity.to_f) * preferred_flat_percent / 100).round(2)
+      computed_amount = ((object.amount * max_applicable_quantity/object.quantity.to_f) - preferred_flat_percent).round(2)
 
       # We don't want to cause the promotion adjustments to push the order into a negative total.
       if computed_amount > object.amount
